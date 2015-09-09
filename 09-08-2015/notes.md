@@ -2,13 +2,17 @@
 
 [Slides](http://algsdatasci.wikischolars.columbia.edu/file/view/slides9-8.pdf/558609823/slides9-8.pdf)
 
-### Example: Insertion Sort
+### Insertion Sort
 #### Definition
+
 Input: a list `A` of integers `x_1 ..., x_n`
+
 Output: a list `A'` of integers `x_1', ..., x_n'`
 
-#### Example: 
+#### Example:
+
 Input: `n = 6, A = {9, 3, 2, 6, 8, 5}`
+
 Output: `A = {2, 3, 4, 5, 6, 8, 9}`
 
 #### Steps:
@@ -19,6 +23,7 @@ Output: `A = {2, 3, 4, 5, 6, 8, 9}`
       - else `x < key`: insert `key` after `x`
 
 #### Correctness
+
 Observation: after loop `i`, the subarray `A[1,i]` is sorted
 
 ##### Base case
@@ -37,6 +42,7 @@ Loop `i + 1`:
   2. Since key is inserted after the first element `A[l]` for `1 ≤ l ≤ i` such that `key ≥ A[l]`, and all elements in `A[l + 1, j]` are pushed one position to the right with their order preserved, the statement is true for `i + 1`.
 
 #### Running time
+
 Number of primitive computational steps
 
 Count how many times each line is executed:
@@ -50,20 +56,20 @@ for i = 2 to n do                 # executed n times
 
 because we can't say *a priori* how many times line 4 is executed,
 
-`for 2 <= i <= n, let ti be the number of times line 4 is executed`
+`for 2 <= i <= n, let t_i be the number of times line 4 is executed`
 
-so line 4 is executed `t1 + t2 + ... + tn` times
-
-```
-  A[j + 1] = A[j]
-  j = j − 1
-end while
-```
-
-line 5 and 6 are executed `t1 + t2 + ... + tn` times
+so line 4 is executed `t_1 + t_2 + ... + t_n` times
 
 ```
-A[j+1] = key                      # executed n-1 times
+    A[j + 1] = A[j]
+    j = j − 1
+  end while
+```
+
+line 5 and 6 are executed `t_1 + t_2 + ... + t_n` times
+
+```
+  A[j+1] = key                      # executed n-1 times
 end for
 ```
 
@@ -73,18 +79,18 @@ end for
 
 linear running time
 
-##### Worst case
+##### Worst case: reverse-sorted array
 
 `(3n^2)/2 + 7n/2 - 4`
 
-Reverse-sorted array: quadratic
+quadratic running time
 
 For proof, consider:
 
 `1 + 2 + ...  + n = (n * (n + 1)) / 2`
 
 ##### Efficiency
-** Question: ** is it efficient?
+**Question:** is it efficient?
 
 To answer, compare to **brute force** solution:
 
@@ -95,21 +101,21 @@ To do this we generate `n!` permutations (see Stirling's approximation formula)
 
 ###### Definition 1: its worst-case performance is better than that of brute-force search
 
-** Caveat: ** ignores the *scaling properties* of the algorithm
+**Caveat:** ignores the *scaling properties* of the algorithm
 
 As the input size grows by a constant factor, we want running time `T(n)` to increase by a constant factor
 
 ###### Definition 2: it has a polynomial running time
 
-** Caveat: ** what about large constants in front of the leading term or large exponents
+**Caveat:** what about large constants in front of the leading term or large exponents
 
 However,
 
   - *small degree polynomial* running times exist for most problems that can be solved in polynomial time
   - conversely, problems for which no polynomial-time algoirthm is known tend to be very hard in practice
-  - so we can distinguish between * easy * and * hard * problems
+  - so we can distinguish between *easy* and *hard* problems
 
-** Remark: ** even low degree polynomials might be too slow
+**Remark:** even low degree polynomials might be too slow
 
 So insertion sort is efficient.
 
