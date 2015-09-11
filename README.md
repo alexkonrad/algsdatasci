@@ -5,6 +5,8 @@
 
 [09-08-2015](09-08-2015/notes.md)
 
+[09-10-2015](09-10-2015/notes.md)
+
 ## Class Information
 Homeworks will use IPython
 

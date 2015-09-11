@@ -130,3 +130,14 @@ Exact characterizations
   - are *too detailed*
   - do not reveal similarities between running times in an immediate way as `n` grows large
   - are often *meaningless*: pseudocode steps will *expand* by a constant factor that depends on the hardware
+
+### Review
+
+#### Insertion Sort
+
+  - Worst-case running time: `T(n) = O(n^2)`
+  - Space: **in-place** algorithm
+
+#### Polynomial Algorithms
+
+Defined as efficient
