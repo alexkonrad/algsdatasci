@@ -295,3 +295,9 @@ It is a *recurrence relation*:
 **Remark**: A recurrence does *not* provide an asymptotic bound for `T(n)`: to this end, we must *solve* the recurrence.
 
 ##### Space
+
+Extra `Theta(n)` space
+
+  - Input to `Merge` is stored in auxiliary arrays
+
+  - Unlike `insertion-sort`, `Mergesort` does *not* sort in place
