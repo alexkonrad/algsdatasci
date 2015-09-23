@@ -9,6 +9,10 @@
 
 [09-15-2015](09-15-2015/notes.md)
 
+[09-17-2015](09-17-2015/notes.md)
+
+[09-22-2015](09-22-2015/notes.md)
+
 ## Class Information
 Homeworks will use IPython
 

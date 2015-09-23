@@ -183,4 +183,18 @@ Therefore,
 T(n) <= 3T(n/2) + cn = O(n^(log2(3))) = O(n^1.59)
 ```
 
-#### 
+#### Recap
+
+##### Mergesort running time analysis and solving recurrences
+  
+  - Recursion trees
+
+  - The master theorem
+
+##### More divide & conquer algorithms
+
+  - Binary search
+
+  - Karatsuba's integer multiplication
+
+  - Strassen's matrix multiplication
