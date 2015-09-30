@@ -15,6 +15,8 @@
 
 [09-24-2015](09-24-2015/notes.md)
 
+[09-29-2015](09-29-2015/notes.md)
+
 ## Class Information
 Homeworks will use IPython
 

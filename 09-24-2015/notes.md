@@ -255,3 +255,13 @@ There are two cases two consider:
   2. *start(u) > start(v)* (DFS starts at Cj)
 
     - Since there is no edge from Cj to Ci, DFS will finish exploring Cj before it restarts from some vertex that will result in discovery of Ci. Thus finish(Cj) < start(u) < finish(u) ⇒ finish(Cj) < finish(Ci)
+
+## Review
+
+  - DFS Applications
+
+    - Cycle detection
+
+    - Topological sorting
+
+    - Strongly connected components in directed graphs
